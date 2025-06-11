@@ -12,7 +12,7 @@ Page Object Model is just a way to keep your code clean and neat.
 
 - Every page of your website = 1 Java class (called a "Page Object")
 - All locators (like buttons, text boxes) + actions (click, type, etc.) go inside that class
-- So if UI changes, you only update in one place, not in every test 🚀
+- So if UI changes, you only update in one place, not in every test.
 
 Example:
 ```java
