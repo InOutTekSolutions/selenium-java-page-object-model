@@ -1,4 +1,4 @@
-# 💻 Selenium Java Automation Framework using POM
+# Selenium Java Automation Framework using POM
 
 This project is a basic Selenium Automation Framework built using **Java + TestNG + Maven** with the **Page Object Model (POM)** design pattern.
 
@@ -6,7 +6,7 @@ It's like a starter kit for automating any website login or form — built to ke
 
 ---
 
-## 🧠 What's POM (Page Object Model)?
+## What's POM (Page Object Model)?
 
 Page Object Model is just a way to keep your code clean and neat.
 
