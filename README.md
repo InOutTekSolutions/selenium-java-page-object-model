@@ -1,14 +1,36 @@
-# Selenium Java Page Object Model (POM) - Sample Automation Framework
+# 💻 Selenium Java Automation Framework using POM
 
-This is a simple and clean automation framework built using **Java**, **Selenium WebDriver**, and the **Page Object Model (POM)** design pattern. It's designed as a demonstration of best practices in UI test automation for login functionality.
+This project is a basic Selenium Automation Framework built using **Java + TestNG + Maven** with the **Page Object Model (POM)** design pattern.
 
-##  Features
+It's like a starter kit for automating any website login or form — built to keep things clean and reusable.
 
-- Page Object Model (POM) structure
-- Selenium WebDriver for browser automation
-- TestNG for test execution and reporting
-- Maven for dependency management and build
-- Easy to extend and customize for any web application
+---
 
+## 🧠 What's POM (Page Object Model)?
 
+Page Object Model is just a way to keep your code clean and neat.
+
+- Every page of your website = 1 Java class (called a "Page Object")
+- All locators (like buttons, text boxes) + actions (click, type, etc.) go inside that class
+- So if UI changes, you only update in one place, not in every test 🚀
+
+Example:
+```java
+public class LoginPage {
+    WebDriver driver;
+    
+    By emailField = By.id("email");
+    By passwordField = By.id("pass");
+    By loginBtn = By.id("login");
+
+    public LoginPage(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    public void login(String email, String pwd) {
+        driver.findElement(emailField).sendKeys(email);
+        driver.findElement(passwordField).sendKeys(pwd);
+        driver.findElement(loginBtn).click();
+    }
+}
 
